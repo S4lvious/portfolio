@@ -1,14 +1,14 @@
 /* Reset */
-body, html{ font-family: 'Inter', sans-serif; line-height: 1; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 1rem 0;padding: 0;}ol,ul{padding-left: 20px;line-height: 1.5;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}
+body, html{ background:linear-gradient(to bottom, #ffeac4, #ffe1ab ); font-family: 'Poppins', sans-serif; line-height: 1; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 1rem 0;padding: 0;}ol,ul{padding-left: 20px;line-height: 1.5;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}
  
 /* Menu */
-:root { --menu-bg: #1d1d1f; --menu-color: #fff; }
+:root { --menu-bg: #ffeac4; --menu-color: black; }
 
 .header{ background-color: var(--menu-bg); position: fixed; top:0;  left:0; z-index: 9999; width: 100%; padding: 10px 15px; }
 .header__content{width: 80%;margin: 0 auto; display: flex;justify-content: space-between;}
 
 .header__logo,
-.header__quick{display: flex; align-items: center;color:var(--menu-color)}
+.header__quick{display: flex; align-items:center; color: var(--menu-color);}
 
 .header__menu{padding: 0;margin: 0;}
 .header__menu li{display: inline-block;}
@@ -81,7 +81,7 @@ h1, .text-1 {font-size: 3.5rem;margin-bottom:0.5rem}
 h2, .text-2 {font-size: 2.4rem;margin-bottom:1rem}
 h3, .text-3  {font-size: 1.8rem;margin-bottom:1rem}
 h4, p, .text-4 {font-size: 1rem;margin-bottom:1rem; line-height: 1.5;}
-a{color: coral}
+a{color: black}
 
 /* ! Button System */
 .button { 
@@ -92,6 +92,10 @@ a{color: coral}
 
 .button:hover{
   background: #444; 
+}
+
+span {
+  font-size: 30px;
 }
 
 /* ! Helpers  */
@@ -127,6 +131,9 @@ a{color: coral}
 .text-right { text-align: right; }
 .text-left { text-align: left; }
 .img-res { width: 100%; height: auto; margin-bottom: 20px;vertical-align: middle;}
+.img-round { border-radius: 100%;}
+.relative {position: relative;}
+.img-small {height: 250px; object-fit: cover; width: 100%;}
 
 
 /* ! Cover */
@@ -136,3 +143,14 @@ a{color: coral}
   background-position: center center; background-size:cover;
 }
 .cover * {color:#fff}
+
+
+/* ! Hero */
+.hero {min-height: 100vh; display: flex; align-items: center; z-index: 1; overflow: hidden;}
+.blob {position: absolute; width: 150%; top: -140px; left: -110px; right: -50px; z-index: 0; }
+
+@media (max-width: 768px) {
+  .sma-text-align-center {
+    text-align: center;
+  }
+}
