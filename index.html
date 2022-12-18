@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -16,8 +17,8 @@
         <strong>LOGO</strong>
       </a>
       <ul class="header__menu">
-        <li><a href="">Home</a></li>
-        <li><a href="">Progetti</a></li>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Skills">Skills</a></li>
         <li><a href="">Curriculum</a></li>
         <li><a href="">Support</a></li>
         <li><a href="">Lorem</a></li>
@@ -34,7 +35,7 @@
 
   <div class="spacer"></div>
 
-  <div class="grid hero">
+  <div class="grid hero" id="Home">
     <div class="col-50 sma-text-align-center mb-4">
       <h1>Salvatore Liccardo</h1>
       <h2>Front-End Developer</h2>
@@ -50,18 +51,48 @@
     </div>
   </div>
 
-  <div class="grid">
-    <div class="col-100 pb-3">
-      <h1>Progetti</h1>
+  <div class="grid card-grid" id="Skills">
+    <div class="col-100 pb-3 text-center">
+      <h1>Skills</h1>
+      <p>Alcune delle mie abilità</p>
     </div>
-    <div class="col-50 pb-4">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia quod expedita placeat vero quos architecto soluta autem, saepe veritatis cum corrupti in velit est id voluptate ipsum molestiae recusandae enim fugiat magni minus deleniti? Non repudiandae cupiditate voluptatibus laborum expedita!</p>
-      <a href="" class="button">Github</a>
+    <div class="col-33">
+      <div class="card">
+        <div class="card-images">
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+      </div>
+        <div class="card-text text-center">
+          <h2>HTML e CSS non hanno segreti per me! Sono i linguaggi da cui ho iniziato.</h2>
+        </div>
+      </div>
     </div>
-    <div class="col-50">
-      <img src="/images/Cattura.PNG" class="img-res img-small">
+    <div class="col-33">
+      <div class="card">
+      <div class="card-images">
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-react"></i>
+      </div>
+          <div class="card-text text-center">
+            <h2>Il mondo di JavaScript e delle sue librerie mi appassiona e affascina.</h2>
+          </div>
+      </div>
+    </div>
+    <div class="col-33">
+      <div class="card">
+      <div class="card-images">
+      
+        <i class="fa-solid fa-paintbrush"></i>
+      </div>
+          <div class="card-text text-center">
+            <h2>Adoro il web design, e da subito ho appreso il concetto di responsive.</h2>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <div class="spacer"></div>
 
   <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/');">
     <div class="cover__content">
