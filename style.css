@@ -74,6 +74,9 @@ html {scroll-behavior: smooth;}
   .sma-33 { width: 33.33%; }
   .sma-50 { width: 50%; }
   .sma-100 { width: 100%; }
+  .sma-gap {gap: 20px;}
+  .sma-text-align-center {text-align: center;}
+  .sma-pb-3{ padding-bottom: 40px; }
 }
 
 
@@ -166,19 +169,6 @@ i {
 .card-images { display: flex; justify-content: center; }
 .card-text { color: #fff; }
 .card-text h2 { line-height: 1.2;}
-
-
-
-
-@media (max-width: 768px) {
-  .sma-text-align-center {
-    text-align: center;
-  }
-
-  .sma-pb-3{ padding-bottom: 40px; }
-  .card-grid { gap: 15px;}
-
-  }
 
   
 
