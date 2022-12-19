@@ -1,6 +1,6 @@
 /* Reset */
 body, html{ background:linear-gradient(to bottom, #ffeac4, #ffe1ab ); font-family: 'Poppins', sans-serif; line-height: 1; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 1rem 0;padding: 0;}ol,ul{padding-left: 20px;line-height: 1.5;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}
- 
+html {scroll-behavior: smooth;}
 /* Menu */
 :root { --menu-bg: #ffeac4; --menu-color: black; }
 
@@ -141,6 +141,9 @@ i {
 .relative {position: relative;}
 .img-small {height: 250px; object-fit: cover; width: 100%;}
 
+.frame {box-shadow: 2px 2px 12px 4px coral; transition: transform 0.2s;}
+.frame:hover {transform: scale(1.02);}
+
 
 /* ! Cover */
 .cover{ 
@@ -157,16 +160,10 @@ i {
 
 /* ! Card */
 
-
-
-.card {  transition: transform 0.2s;  box-shadow: 2px 2px 12px 4px rgba(255,127,80,0.7);  background-color: coral; height: 60vh; object-fit: contain; display: flex; justify-content: center; padding: 20px; gap: 15px; border-radius: 3%; flex-direction: column;}
-
+.card {  transition: transform 0.2s;  box-shadow: 2px 2px 12px 4px coral;  background-color: #ff8e50; height: 60vh; object-fit: contain; display: flex; justify-content: center; padding: 20px; gap: 15px; border-radius: 3%; flex-direction: column;}
 .card:hover { transform: scale(1.02);}
-
 .card-images { display: flex; justify-content: center; }
-
 .card-text { color: #fff; }
-
 .card-text h2 { line-height: 1.2;}
 
 
@@ -177,5 +174,5 @@ i {
     text-align: center;
   }
 
-  .card-grid { gap: 10px;}
+  .card-grid { gap: 15px;}
 }
