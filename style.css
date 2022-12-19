@@ -64,6 +64,7 @@ html {scroll-behavior: smooth;}
   .tab-33 { width: 33.33%; }
   .tab-50 { width: 50%; }
   .tab-100 { width: 100%; }
+  .tab-gap {gap: 20px;}
 }
 
 @media (max-width: 768px) {
